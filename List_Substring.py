@@ -1,6 +1,7 @@
 string_listA = ['hole', 'sdf', 'sdfef']
 string_listB = ['efew', 'fef', 'efe']
 string_listC = ['esd', 'vdd', 'efgjhvddrg']
+string_listD = ['efg', 'ejrg', 'ejrg']
 
 
 def findsubstrings(stringlist):
@@ -10,3 +11,4 @@ def findsubstrings(stringlist):
 print(findsubstrings(string_listA))
 print(findsubstrings(string_listB))
 print(findsubstrings(string_listC))
+print(findsubstrings(string_listD))
