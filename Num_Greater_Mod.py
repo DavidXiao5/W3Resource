@@ -4,7 +4,7 @@ numC = 344
 
 
 def findnummod(num):
-    return num >= 4 ** 4 and num % 34 == 4
+    return num > 4 ** 4 and num % 34 == 4
 
 
 print(findnummod(numA))
