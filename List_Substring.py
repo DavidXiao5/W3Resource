@@ -4,7 +4,7 @@ string_listC = ['esd', 'vdd', 'efgjhvddrg']
 
 
 def findsubstrings(stringlist):
-    return stringlist[-2] in stringlist[-1]
+    return stringlist[-2] in stringlist[-1] and stringlist[-2] != stringlist[-1]
 
 
 print(findsubstrings(string_listA))
