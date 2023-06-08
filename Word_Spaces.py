@@ -1,21 +1,14 @@
-sentenceA = 'Python snakes kill,'
-sentenceB = 'The Python coding language'
-sentenceC = 'Does worse'
+import re
+sentenceA = 'Python snakes kill.'
+sentenceB = 'The Python coding language...'
+sentenceC = 'does worse'
 
 
-def seperatewords(sentence):
-    listspacers = []
-    listwords = []
-    listedsentence = list(sentence)
-    for word in listedsentence:
-        if word == ',' or word == ' ':
-            listspacers.append(word)
-        else:
-            listwords.append(word)
-    print(listspacers)
-    print(listwords)
+def seperatewords(string):
+    merged = re.split('([, ])', string)
+    return [merged[::2], merged[1::2]]
 
 
-seperatewords(sentenceA)
-seperatewords(sentenceB)
-seperatewords(sentenceC)
+print(seperatewords(sentenceA))
+print(seperatewords(sentenceB))
+print(seperatewords(sentenceC))
