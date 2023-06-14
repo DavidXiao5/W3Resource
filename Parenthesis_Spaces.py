@@ -1,13 +1,17 @@
-stringA = '( ()) ((()()())) (()) ()'
-stringB = '())((()())) (()((() ((()'
-stringC = '(()()()))())) (()) (()()'
+stringA = '( ()) ((() ( ) () ) )  ( ( ) )  (  ) '
+stringB = '(( ) ) ( ( ( ) ())) (()())(()) ((()))'
+stringC = '(()()( ) )((())) (() )   ( ( )    ())'
 
 
 def seperateparenthesis(string):
-    plist = []
-    for i in string.replace(' ', ''):
-        plist.append(i)
-    print(plist)
+    listp = []
+    stringp = ""
+    for s in string.replace(' ', ''):
+        stringp += s
+        if stringp.count("(") == stringp.count(")"):
+            listp.append(stringp)
+            stringp = ""
+    print(listp)
 
 
 seperateparenthesis(stringA)
